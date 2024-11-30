@@ -68,82 +68,133 @@ Drive-in-Khmer is an online service aimed at solving car rental challenges in Ca
 	
 		-Additional features to stand out in the market.
 
-🛠️ Features
+**🛠️ Features**
 
-User Functions:
-🔑 Sign-up/Login:
-New users can register by providing username, email, password, and confirmation.
-Existing users can log in using their credentials.
-📜 Description Page:
-Overview of the application with purpose and contact details.
-🏠 Homepage:
-Vehicle selection with options to customize:
-Car type.
-Color.
-Number of seats.
-Rental duration and dates.
-Contact information (phone number).
-💳 Payment:
-Visa card payment with cardholder name, card number, and CVV.
-Pre-payment receipt preview for confirmation.
-📄 Downloadable Receipt:
-Receipt with payment confirmation and booking details.
-📋 Expected Pages
+	**User Functions:**
+ 
+	🔑 Sign-up/Login:
+	New users can register by providing username, email, password, and confirmation.
+	Existing users can log in using their credentials.
+ 
+	📜 Description Page:
+	Overview of the application with purpose and contact details.
+ 
+	🏠 Homepage:
+ 
+	**Vehicle selection with options to customize:**
+		-Car type.
+  
+		-Color.
+  
+		-Number of seats.
+  
+		-Rental duration and dates.
+  
+		-Contact information (phone number).
+  
+	**💳 Payment:**
+ 
+ 		-Pre-payment receipt preview for confirmation.
+   
+		-Visa card payment with cardholder name, card number, expired date, and CVV.
+	
+	**📄 Downloadable Receipt:**
+ 
+		-Receipt with payment confirmation and booking details.
+  
+**📋 Expected Pages**
 
-Sign-up/Login Page.
-Description Page.
-Homepage.
-Vehicle Database Page.
-📂 Database
+	-Sign-up/Login Page.
+ 
+	-Description Page.
+ 
+	-Homepage.
+ 
+	-Vehicle Database Page.
 
-The system uses SQLite3 and TablePlus for data storage. Key tables include:
+ 
+**📂 Database**
 
-Customer_info:
-Stores user registration and login details.
-Orders_detail:
-Tracks user bookings.
-Pay_status:
-Indicates payment success (1) or failure (0).
-Vehicles_info:
-Maintains vehicle inventory.
-⚙️ Tools and Technologies
+	The system uses SQLite3 and TablePlus for data storage. Key tables include:
 
-Language: Python
-Framework: Tkinter
-Database: SQLite3
-GUI Management: TablePlus
-Payment: Visa card integration
-📈 Development Status
+		-Customer_info:
+		Stores user registration and login details.
+  
+		-Orders_detail:
+		Tracks user bookings.
+  
+		-Pay_status:
+		Indicates payment success (1) or failure (0).
+  
+		-Vehicles_info:
+		Store vehicles information 
+  
+**⚙️ Tools and Technologies**
 
-The application is functional but under continuous improvement. Future updates include:
+	-Language: Python
+ 
+	-Framework: Tkinter
+ 
+	-Database: SQLite3, TablePlus
+ 
+	-Payment: Visa card integration
+ 
+**📈 Development Status**
 
-Enhanced UI design.
-Additional payment options (e.g., ABA).
-Localization for Khmer users.
+	The application is functional but under continuous improvement. Future updates include:
 
-How to Run the Code: 
--You need to install libraries and images: 
-pip  install pillow, tkcalendar, fpdf
-Install the images in image folder 
-Then copy the image path to:
--Signup/login variable: image in login_page(), image in GUI()
--Description page variable: image
--Homepage variables: car_images in display_car(), image_path in process_payment()
--The images should have the same names as variable
+		-Enhanced UI design.
+  
+		-Additional payment options (e.g., ABA).
+  
+		-Localization for Khmer users.
 
-After download the code copy document paths to:
--homepage_path in open_description() in sign_up.py
--homepage_path in homepage() in description.py
--homepage_path in open_description() in home_page.py
--Run the code in pycharm or vscode
--Start with sign_up.py
--How it works
-In sign_up page, the information that you filled in will be inserted into database
-Read through the description page and click Get Start and it leads you to home_page.py
-In home_page, you can click on the select under each car image
-Customize your car
-Confirm your booking
-Proceed to payment with visa card
-Download the receipt
-Click Ok to return to description page 
+
+**⚙️ How to Run the Code:**
+
+**Install libraries and images:**
+
+	pip  install pillow, tkcalendar, fpdf
+ 
+	Install the images in image folder 
+ 
+**Then copy the image path to:**
+
+	-Signup/login variable: image in login_page(), image in GUI()
+ 
+	-Description page variable: image
+ 
+	-Homepage variables: car_images in display_car(), image_path in process_payment()
+ 
+	-The images should have the same names as variable
+
+**Download and Copy Code Documents path to:**
+
+	-homepage_path in open_description() in sign_up.py
+ 
+	-homepage_path in homepage() in description.py
+ 
+	-homepage_path in open_description() in home_page.py
+ 
+	-Run the code in pycharm or vscode
+ 
+	-Start with sign_up.py
+ 
+**⚙️How it works**
+
+	-In sign_up page, the information that you filled in will be inserted into database
+ 
+	-Read through the description page and click Get Start and it leads you to home_page.py
+ 
+	-In home_page, you can click on the select under each car image
+ 
+	-Customize your car
+ 
+	-Confirm your booking
+ 
+	-Proceed to payment with visa card
+ 
+	-Download the receipt
+ 
+	-Click Ok to return to description page 
 
