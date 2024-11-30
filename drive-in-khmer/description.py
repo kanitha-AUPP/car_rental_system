@@ -107,7 +107,7 @@ sign_up_button.bind("<Leave>", on_leave)
 # Footer Section
 footer_label = tk.Label(
     root,
-    text="Drive-in-Khmer Rentals © 2024",
+    text="Drive-in-Khmer Rentals © 2024/ Tel: +85589888981 Email: drive_in_khmer@gmail.com",
     font=("Arial", 12, "italic"),
     fg="white",
     bg="darkblue"
