@@ -30,43 +30,43 @@ Drive-in-Khmer is an online service aimed at solving car rental challenges in Ca
  
 **🚀 Current Progress**
 
-1. **Problem Analysis**
-Finding a private vehicle for short trips in Cambodia can be challenging. This platform solves the issue by providing an alternative to public transportation, prioritizing user comfort and privacy.
-
-2. **Design**
-Using Tkinter GUI, the platform features:
-
-	-A clean, user-friendly interface.
- 
-	-Simple navigation for customization and transactions.
- 
-3. **Implementation**
-
-	Key features include:
-
-	-Vehicle customization.
- 
-	-Online payment options.
- 
-	-Downloadable receipts.
-
-	-Store information in database.
- 
-
-4. **Testing and Debugging**
-   
- 	-Through testing for smooth transitions and error handling.
-
-	-Database integration for accurate data management.
-
-  	-Debugging the error in each page to make sure a smooth transition when users click on buttons or missing 		information
-
-5. **Development**
-The application is in the development phase with planned improvements for:
-
-	-Enhanced UI/UX.
-
-	-Additional features to stand out in the market.
+	1. **Problem Analysis**
+	Finding a private vehicle for short trips in Cambodia can be challenging. This platform solves the issue by providing an alternative to public transportation, prioritizing user comfort and privacy.
+	
+	2. **Design**
+	Using Tkinter GUI, the platform features:
+	
+		-A clean, user-friendly interface.
+	 
+		-Simple navigation for customization and transactions.
+	 
+	3. **Implementation**
+	
+		Key features include:
+	
+		-Vehicle customization.
+	 
+		-Online payment options.
+	 
+		-Downloadable receipts.
+	
+		-Store information in database.
+	 
+	
+	4. **Testing and Debugging**
+	   
+	 	-Through testing for smooth transitions and error handling.
+	
+		-Database integration for accurate data management.
+	
+	  	-Debugging the error in each page to make sure a smooth transition when users click on buttons or missing information
+	
+	5. **Development**
+	The application is in the development phase with planned improvements for:
+	
+		-Enhanced UI/UX.
+	
+		-Additional features to stand out in the market.
 
 🛠️ Features
 
@@ -120,3 +120,30 @@ The application is functional but under continuous improvement. Future updates i
 Enhanced UI design.
 Additional payment options (e.g., ABA).
 Localization for Khmer users.
+
+How to Run the Code: 
+-You need to install libraries and images: 
+pip  install pillow, tkcalendar, fpdf
+Install the images in image folder 
+Then copy the image path to:
+-Signup/login variable: image in login_page(), image in GUI()
+-Description page variable: image
+-Homepage variables: car_images in display_car(), image_path in process_payment()
+-The images should have the same names as variable
+
+After download the code copy document paths to:
+-homepage_path in open_description() in sign_up.py
+-homepage_path in homepage() in description.py
+-homepage_path in open_description() in home_page.py
+-Run the code in pycharm or vscode
+-Start with sign_up.py
+-How it works
+In sign_up page, the information that you filled in will be inserted into database
+Read through the description page and click Get Start and it leads you to home_page.py
+In home_page, you can click on the select under each car image
+Customize your car
+Confirm your booking
+Proceed to payment with visa card
+Download the receipt
+Click Ok to return to description page 
+
